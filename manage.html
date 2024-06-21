@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Students</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Manage Student Data</h2>
+
+<h3>Create Student</h3>
+<form method="post" action="manage.php">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    <br>
+    <input type="submit" name="create" value="Create">
+</form>
+
+<h3>Read Students</h3>
+<form method="get" action="manage.php">
+    <input type="submit" name="read" value="Read">
+</form>
+
+<h3>Update Student</h3>
+<form method="post" action="manage.php">
+    <label for="id">ID:</label>
+    <input type="number" id="id" name="id" required>
+    <br>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required>
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required>
+    <br>
+    <input type="submit" name="update" value="Update">
+</form>
+
+<h3>Delete Student</h3>
+<form method="post" action="manage.php">
+    <label for="id">ID:</label>
+    <input type="number" id="id" name="id" required>
+    <br>
+    <input type="submit" name="delete" value="Delete">
+</form>
+
+</body>
+</html>
